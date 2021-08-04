@@ -2,26 +2,26 @@
 const recipes = require("../server/data/main");
 
 const getMainRecipes = async () => {
-    const response = await fetch("http://localhost:8080/api/recipes");
-    const data = await response.json();
-    console.log(data);
-    return data;
+	const response = await fetch("http://localhost:8080/api/recipes");
+	const data = await response.json();
+	console.log(data);
+	return data;
 };
 
 const getRandomRecipe = async () => {
-    const response = await fetch("http://localhost:8080/api/recipes/random");
-    const data = await response.json();
-    console.log(data);
-    return data;
+	const response = await fetch("http://localhost:8080/api/recipes/random");
+	const data = await response.json();
+	console.log(data);
+	return data;
 };
 
-const searchRecipes = async (query) => {
-    const response = await fetch(
-        `http://localhost:8080/api/recipes/search?q=${query}`
-    );
-    const data = await response.json();
-    console.log(data);
-    return data;
+const searchRecipes = async query => {
+	const response = await fetch(
+		`http://localhost:8080/api/recipes/search?q=${query}`
+	);
+	const data = await response.json();
+	console.log(data);
+	return data;
 };
 
 const resultsBtn = document.querySelector("#resultsBtn");
@@ -30,11 +30,7 @@ const searchBar = document.querySelector("#searchBar");
 
 resultsBtn.addEventListener("click", resultRecipes);
 randomBtn.addEventListener("click", getRandomRecipe);
-searchBar.addEventListener("click", searchRecipes);
-
-getMainRecipes();
-getRandomRecipe();
-searchRecipes("chicken");
+searchBar.addEventListener("click", searchRecipes); //search functionality hasn't been fully implemented yet
 
 // function resultRecipes() {
 //     let resultsContainer = document.querySelector("#resultsContainer");
