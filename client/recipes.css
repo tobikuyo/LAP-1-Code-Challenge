@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#box {
+    flex: 0 0 33%;
+    border: 1px solid #333;
+    min-height: 33.33vh;
+}
+
+@media screen and (max-width: 900px) {
+    #box {
+        flex: 0 0 50%;
+        min-height: 25vh;
+    }
+
+    #box:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #box {
+        flex: 0 0 100%;
+        min-height: 25vh;
+    }
+
+    #box:last-child {
+        display: none;
+    }
+}

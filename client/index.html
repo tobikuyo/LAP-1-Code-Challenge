@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="bundle.js" defer></script>
     <title>Recipes API</title>
 </head>
 
@@ -16,10 +17,10 @@
         </div>
 
         <form>
-            <input type="text">
+            <input type="text" id="searchBar">
             <div class="buttons">
-                <button type="button">Google Search</button>
-                <button type="button">I'm Feeling Lucky</button>
+                <button type="button" id="resultsBtn">Google Search</button>
+                <button type="button" id="randomBtn">I'm Feeling Lucky</button>
             </div>
         </form>
     </section>
