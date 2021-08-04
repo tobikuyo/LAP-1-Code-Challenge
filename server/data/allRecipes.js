@@ -6,6 +6,7 @@ const recipes = [
 		source: 'Serious Eats',
 		totalTime: 60,
 		calories: 428,
+		keywords: ['main', 'chicken', 'lunch', 'dinner'],
 		ingredients: [
 			'1/2 cup olive oil',
 			'5 cloves garlic, peeled',
@@ -26,6 +27,7 @@ const recipes = [
 		source: 'Martha Stewart',
 		totalTime: 50,
 		calories: 901,
+		keywords: ['main', 'chicken', 'lunch', 'dinner'],
 		ingredients: [
 			'6 bone-in chicken breast halves, or 6 chicken thighs and wings, skin-on',
 			'1/2 teaspoon coarse salt',
@@ -40,6 +42,7 @@ const recipes = [
 		source: 'Epicurious',
 		totalTime: 45,
 		calories: 286,
+		keywords: ['main', 'chorizo', 'lunch', 'dinner'],
 		ingredients: [
 			'3 ounces Spanish chorizo, finely chopped',
 			'1 stick of butter, softened',
@@ -52,15 +55,32 @@ const recipes = [
 		name: 'Chilli Con Carne',
 		image: 'https://bit.ly/3fpFzKm',
 		recipe: 'https://www.bbcgoodfood.com/recipes/chilli-con-carne-recipe',
+		keywords: ['main', 'beef', 'rice', 'tomato', 'lunch', 'dinner'],
 		source: 'BBC Good Food',
 		totalTime: 45,
 		calories: 286,
 		ingredients: [
-			'3 ounces Spanish chorizo, finely chopped',
-			'1 stick of butter, softened',
-			'Zest and juice of 1 lemon',
-			'1/2 cup flat-leaf parsley leaves, coarsely chopped',
-			'Salt'
+			'2 sticks of celery',
+			'olive oil',
+			'400 g basmati rice',
+			'sea salt and freshly ground black pepper',
+			'2 x 400g tins of chopped tomatoes',
+			'2 medium onions',
+			'2 cloves of garlic',
+			'1 x 230g tub of guacamole',
+			'2 red peppers',
+			'2 tablespoons balsamic vinegar',
+			'2 medium carrots',
+			'1 small bunch of fresh coriander',
+			'1 lime',
+			'1 heaped teaspoon',
+			'1 x 400g tin of chickpeas',
+			'1 x 500g tub of natural yoghurt',
+			'1 x 400g tin of red kidney beans',
+			'500 g good quality minced beef',
+			'1 heaped teaspoon ground cinnamon',
+			'ground cumin',
+			'1 heaped teaspoon chilli powder'
 		]
 	},
 	{
@@ -70,6 +90,7 @@ const recipes = [
 		source: 'BBC Good Food',
 		totalTime: 95,
 		calories: 542,
+		keywords: ['main', 'beef', 'potato', 'lunch', 'dinner'],
 		ingredients: [
 			'3 tbsp olive oil',
 			'1¼kg beef mince',
@@ -98,6 +119,7 @@ const recipes = [
 		source: 'Simply Recipes',
 		totalTime: 90,
 		calories: 328,
+		keywords: ['main', 'lamb', 'curry', 'lunch', 'dinner'],
 		ingredients: [
 			'2 lamb shanks AND 2 lamb shoulder steaks (yielding about 2 lbs of meat without the bone)',
 			'1 large onions, chopped, about 3 1/2 cups',
@@ -125,6 +147,7 @@ const recipes = [
 		source: 'BBC Good Food',
 		totalTime: 20,
 		calories: 256,
+		keywords: ['main', 'salmon', 'spinach', 'lunch', 'dinner'],
 		ingredients: [
 			'1 tsp sunflower or vegetable oil',
 			'2 skinless salmon fillets',
@@ -143,6 +166,7 @@ const recipes = [
 		source: 'Epicurious',
 		totalTime: 65,
 		calories: 467,
+		keywords: ['main', 'pork', 'lunch', 'dinner'],
 		ingredients: [
 			'3 garlic cloves',
 			'2 teaspoons coarsely chopped rosemary',
@@ -158,6 +182,7 @@ const recipes = [
 		source: 'BBC Good Food',
 		totalTime: 30,
 		calories: 536,
+		keywords: ['main', 'steak', 'beef', 'potato', 'pea', 'dinner'],
 		ingredients: [
 			'2 rib-eye steaks , about 300g each and 2cm thick',
 			'2 garlic cloves , grated',
@@ -176,6 +201,7 @@ const recipes = [
 		source: 'Chowhound',
 		totalTime: 90,
 		calories: 468,
+		keywords: ['main', 'vegatarian', 'burger', 'falafel', 'lunch', 'dinner'],
 		ingredients: [
 			'1 1/2 cups dried garbanzo beans, also known as chickpeas',
 			'1/2 medium red onion, coarsely chopped',
@@ -192,6 +218,125 @@ const recipes = [
 			'1/2 cup plain Greek yogurt',
 			'6 tablespoons tomato jam (optional, see Game Plan note)',
 			'Lettuce leaves'
+		]
+	},
+
+	{
+		name: 'American Pancakes',
+		image: 'https://bit.ly/3ChtZuz',
+		recipe: 'http://www.bbcgoodfood.com/recipes/335615/',
+		source: 'BBC Good Food',
+		totalTime: 15,
+		calories: 376,
+		keywords: ['breakfast', 'pancakes', 'dessert'],
+		ingredients: [
+			'100 g Self Raising Flour',
+			'150 ml Cold Milk',
+			'2 tbsp Sugar',
+			'1 beaten Egg'
+		]
+	},
+	{
+		name: 'Full English Breakfast',
+		image: 'https://www.edamam.com/web-img/d0e/d0ea495c1a04eff9f2b808e339bd5d0d.jpg',
+		recipe: 'http://www.jamieoliver.com/recipes/pork-recipes/the-full-english',
+		source: 'Jamie Oliver',
+		totalTime: 20,
+		calories: 427,
+		keywords: ['breakfast', 'english', 'bacon', 'beans', 'sausages', 'eggs'],
+		ingredients: [
+			'250 g smoked dry cured back bacon',
+			'a loaf of thick sliced bread for toasting',
+			'2 small tomatoes scored on top',
+			'170 g black pudding sliced',
+			'6 eggs preferably free range or organic cracked into a bowl and beaten',
+			'sea salt and freshly ground black pepper',
+			'1 x 420g can of baked beans',
+			'2 knobs of butter',
+			'4 field mushrooms wiped',
+			'6 good quality pork and leek sausages'
+		]
+	},
+	{
+		name: 'Easy Chocolate Molten Cakes',
+		image: 'https://www.edamam.com/web-img/ef5/ef53a025e73cf2ed5de74c3f000d0d40.jpg',
+		recipe: 'https://www.bbcgoodfood.com/recipes/easy-chocolate-molten-cakes',
+		source: 'BBC Good Food',
+		totalTime: 35,
+		calories: 475,
+		keywords: ['dessert', 'cake', 'chocolate'],
+		ingredients: [
+			'100g butter, plus extra to grease',
+			'100g dark chocolate, chopped',
+			'150g light brown soft sugar',
+			'3 large eggs',
+			'½ tsp vanilla extract',
+			'50g plain flour',
+			'single cream, to serve'
+		]
+	},
+	{
+		name: 'Salted Chocolate and Hazelnut Brownies',
+		image: 'https://www.edamam.com/web-img/543/54350e8e9e3537f902fc8eedf9703120.jpg',
+		recipe: 'https://www.bbcgoodfood.com/recipes/easy-chocolate-molten-cakes',
+		source: 'BBC Good Food',
+		totalTime: 55,
+		calories: 475,
+		keywords: ['dessert', 'brownie', 'chocolate', 'hazelnut'],
+		ingredients: [
+			'100g slightly salted butter , cut into small pieces, plus extra for the tin',
+			'200g 70% dark chocolate , broken into chunks',
+			'150g chocolate and hazelnut spread',
+			'3 eggs , beaten',
+			'200g golden caster sugar',
+			'150g plain flour',
+			'100g toasted pecan nuts , roughly chopped',
+			'ice cream and caramel sauce, to serve'
+		]
+	},
+	{
+		name: 'Sesame, Halloumi and Courgette Fritters with Chilli Honey Drizzle',
+		image: 'https://www.edamam.com/web-img/d3f/d3f14c62ca69f6866c20fb211ddad64f.jpg',
+		recipe: 'https://www.bbcgoodfood.com/recipes/sesame-halloumi-courgette-fritters-chilli-honey-drizzle',
+		source: 'BBC Good Food',
+		totalTime: 23,
+		calories: 354,
+		keywords: ['starter', 'halloumi', 'courgette', 'fritters', 'honey'],
+		ingredients: [
+			'2 medium courgettes , grated',
+			'½ tsp sea salt , plus extra to serve',
+			'30g self-raising flour',
+			'20g rice or cornflour',
+			'2 tbsp toasted sesame seeds',
+			'¼ tsp ground white pepper',
+			'2 tsp mint leaves , finely chopped',
+			'80g halloumi , grated',
+			'2 large eggs',
+			'2 spring onions , finely sliced',
+			'vegetable oil , for frying',
+			'2 tbsp honey',
+			'½ tsp pul biber or other chilli flakes',
+			'2 lemons , zested'
+		]
+	},
+	{
+		name: 'Crab Cakes',
+		image: 'https://bit.ly/3CgAVrS',
+		recipe: 'http://www.seriouseats.com/recipes/2013/04/the-food-lab-crab-cakes-recipe.html',
+		source: 'Serious Eats',
+		totalTime: 23,
+		calories: 354,
+		keywords: ['starter', 'crab', 'cakes', 'tartare'],
+		ingredients: [
+			'1 pound fresh lump or jumbo lump crab meat, picked over',
+			'2 tablespoons mayonnaise',
+			'2 tablespoons chopped chives, tarragon, parsley, or a mix (optional)',
+			'2 large eggs, divided',
+			'1 1/2 cups panko-style bread crumbs',
+			'3 tablespoons canola or vegetable oil',
+			'3 tablespoons unsalted butter',
+			'Kosher salt',
+			'1 recipe Extra Tangy Tartare Sauce or lemon wedges for serving'
 		]
 	}
 ];
