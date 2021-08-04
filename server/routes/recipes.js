@@ -1,8 +1,15 @@
 const router = require('express').Router();
-const recipes = require('../data');
+const mainRecipes = require('../data/main');
+const recipes = require('../data/allRecipes');
 
 router.get('/', (req, res) => {
-	res.json(recipes);
+	res.json(mainRecipes);
+});
+
+router.get('/search', (req, res) => {
+	const { q: query } = req.query;
+	const results = recipes.filter(recipe => recipe.keywords.includes(query));
+	res.json(results);
 });
 
 router.get('/random', (req, res) => {
